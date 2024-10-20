@@ -21,7 +21,7 @@
     top: 50%; /* Align vertically */
     transform: translateY(-50%); /* Center vertically */
     height: 40px; /* Make the logo smaller */
-    opacity: 0.5;
+    opacity: 1.8;
 
   }
 
@@ -34,7 +34,7 @@
   }
 
   a:hover {
-    color: grey;
+    color: rgb(120, 190, 194);
   }
 
 
@@ -79,6 +79,7 @@
     border-radius: 3px;
     opacity: 0.8;
     position:fixed;
+    display: none;
 }
 
   .logo:hover {
@@ -90,6 +91,7 @@
   .logo { 
     width: 43px;  /* Adjust the width as needed */ 
     height: 55px;
+    display: block;
   }
 }
 
@@ -105,103 +107,43 @@
     text-align: center;
   }
 
-  .container {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping in smaller screens */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    gap: 20px;
-    align-items: stretch; /* Ensures both text and image have the same height */
-    height: auto;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
 }
 
-/* Image Container Styling */
-.image-container {
-  flex: 1;
-  padding: 0px;
-  box-shadow: 0px 0px 0px 10px rgb(79, 150, 154) inset;
+.grid-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item img {
+  width: 100%; /* Paveikslėliai užima visą tėvų plotą */
+  height: auto; /* Automatinis aukštis pagal paveikslėlio proporcijas */
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-}
-
-.image {
-    width: 100%;
-    height: auto;
-    opacity: 0.4;
-    border-radius: 5px;
-}
-
-/* Text on Image Styling */
-.text-on-image {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0); /* Optional: Adds a translucent background */
-    padding: 20px;
-    border-radius: 5px;
-    font-family: Garamond, serif;
-    font-weight: bold;
-}
-
-/* Main Content (Text Box) Styling */
-.main-content {
-    flex: 1;
-    padding: 0; /* Removed padding to ensure text sits on the image */
-    color: rgb(79, 150, 154);
-    font-family: Garamond, serif;
-    text-align: left;
-}
-
-/* Sidebar (Image Container) Styling */
-.sidebar {
-    flex: 1;
-    padding: 0px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-}
-
-.sidebar-image {
-    border-radius: 5px;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
 }
 
 /* Responsive Design for smaller screens */
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .main-content, .sidebar {
-        flex: none;
-        width: 100%;
-        height: auto;
-    }
-    
-    .text-on-image {
-        top: 5%; /* Adjust text position for smaller screens */
-        left: 5%;
-        padding: 15px; /* Smaller padding */
-    }
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Switch to a single column */
+  }
+  .header {
+    text-align: center;
+  }
+  .fotologo {
+    display: none;
+  }
 }
-
-
 
 
 .forma {
   background-color: #f0f0f0;
-  padding: 40px;
-  margin-top: 30px;
+  padding: 60px;
+  margin-top: 10px;
 }
 
 /* Heading Styling */

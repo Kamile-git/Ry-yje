@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Ryšyje </title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" sizes="16x16" type="image/x-icon" href="/images/favicon.ico">
+    <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script>
   </head>
 <body>
 
   <div class="header">
     <nav>
       <a href="#balta1"> RYŠYJE </a>
-      <a href="#mes"> APIE </a>
+      <a href="#apie"> APIE </a>
       <a href="#forma"> UŽSAKYMAS </a>
     </nav>
     <img src="fotologo.png" alt="fotologo" class="fotologo">
@@ -37,25 +39,24 @@
 </p>
 </div>
 
-<div class="container">
-  <!-- Main Content Area -->
-  <div class="main-content" id="mes">
-    <div class="image-container">
-      <img src="Foto8.jpg" class="image">
-    </div>
-  </div>
 
-  <!-- Sidebar Area -->
-  <div class="sidebar">
-    <!-- Adding an image in the sidebar -->
-    <img src="Foto20.jpg" alt="Sidebar Image" class="sidebar-image">
+<div class="grid-container" id="apie">
+  <div class="grid-item">
+    <img src="1.png" class="image1">
+  </div>
+  <div class="grid-item">
+    <img src="2.png" class="image1">
+  </div>
+  <div class="grid-item">
+    <img src="3.png" class="image1">
   </div>
 </div>
+
 
   <div class="forma" ID="forma">
     <h3 class="uzsakymas">Užsakymas</h3>
       <p class="instrukcija">Įrašykite savo vardą ir el.paštą ir mes susisieksime su jumis dėl tolesnės užsakymo eigos.</p>
-      <form action="/action_page.php" target="_blank" class="forma1">
+      <form action="https://getlaunchlist.com/s/qFYydD" method="POST" target="_blank" class="forma1">
           <input class="name" type="text" placeholder="Vardas" required name="Name">
           <br />
           <input class="email" type="text" placeholder="El. paštas" required name="Email">
