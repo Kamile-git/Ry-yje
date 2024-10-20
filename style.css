@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: rgb(249, 249, 249, 0.3);/*rgb(79, 150, 154, 0.9); /* 0.5 for 50% transparency */
+    text-align: left;
+    padding: 16px;
+    word-spacing: 50px;
+    font-family: Lato, sans-serif;
+    position: absolute; /* Absolute positioning to place it over the hero section */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure it covers the width of the page */
+    z-index: 1000; /* Ensure it's layered above other content */
+  }
+  .fotologo {
+    position: absolute; /* Position the logo absolutely relative to the .header */
+    right: 50px; /* Increase the space from the right edge */
+    top: 50%; /* Align vertically */
+    transform: translateY(-50%); /* Center vertically */
+    height: 40px; /* Make the logo smaller */
+    opacity: 0.5;
+
+  }
+
+
+  a {
+    color: white;
+    margin: 16px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  a:hover {
+    color: grey;
+  }
+
+
+  body, html {
+    height: 150%;
+}
+
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Foto17.jpg");
+
+  /* Set a specific height */
+  height: 46%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(79, 150, 154);
+}
+
+.logo { 
+    width: 68px;  /* Adjust the width as needed */ 
+    height: 90px;  /* Maintain aspect ratio */ 
+    position: absolute; /* Positioning the logo */ 
+    bottom: 50px; 
+    right: 40px;
+    border-radius: 3px;
+    opacity: 0.8;
+    position:fixed;
+}
+
+  .logo:hover {
+     box-shadow: 10px 10px 5px #888888;
+     opacity: 1.0
+  }
+
+  @media screen and (max-width: 768px) {
+  .logo { 
+    width: 43px;  /* Adjust the width as needed */ 
+    height: 55px;
+  }
+}
+
+  .balta {
+    margin: 50px;
+  }
+  .balta1 {
+    font-style: italic;
+    text-align: center;
+  }
+  .balta2 {
+    font-style: italic;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping in smaller screens */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+    align-items: stretch; /* Ensures both text and image have the same height */
+    height: auto;
+}
+
+/* Image Container Styling */
+.image-container {
+  flex: 1;
+  padding: 0px;
+  box-shadow: 0px 0px 0px 10px rgb(79, 150, 154) inset;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+    border-radius: 5px;
+}
+
+/* Text on Image Styling */
+.text-on-image {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0); /* Optional: Adds a translucent background */
+    padding: 20px;
+    border-radius: 5px;
+    font-family: Garamond, serif;
+    font-weight: bold;
+}
+
+/* Main Content (Text Box) Styling */
+.main-content {
+    flex: 1;
+    padding: 0; /* Removed padding to ensure text sits on the image */
+    color: rgb(79, 150, 154);
+    font-family: Garamond, serif;
+    text-align: left;
+}
+
+/* Sidebar (Image Container) Styling */
+.sidebar {
+    flex: 1;
+    padding: 0px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.sidebar-image {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-content, .sidebar {
+        flex: none;
+        width: 100%;
+        height: auto;
+    }
+    
+    .text-on-image {
+        top: 5%; /* Adjust text position for smaller screens */
+        left: 5%;
+        padding: 15px; /* Smaller padding */
+    }
+}
+
+
+
+
+.forma {
+  background-color: #f0f0f0;
+  padding: 40px;
+  margin-top: 30px;
+}
+
+/* Heading Styling */
+.uzsakymas {
+  color: rgb(79, 150, 154);
+  font-size: 24px; /* Font size */
+  margin-bottom: 16px; /* Space below heading */
+  text-align: center;
+}
+
+/* Paragraph Styling */
+.instrukcija {
+  color: #555; /* Medium grey for the text */
+  margin-bottom: 24px; /* Space below paragraph */
+  text-align: center;
+}
+
+form {
+text-align: center;
+
+}
+
+/* Input Field Styling */
+.forma-input {
+  border-bottom: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners for input */
+  padding: 12px; /* Padding for input */
+  font-size: 16px; /* Font size for input */
+  position: relative;
+  display: block;
+
+}
+
+.name {
+  margin-bottom: 12px;
+  border-style: none;
+  text-align: center;
+  font-size: medium;
+}
+
+.email{
+  margin-bottom: 22px;
+  border-style: none;
+  text-align: center;
+  font-size: medium;
+}
+
+
+/* Button Styling */
+.button {
+  background-color: rgb(79, 150, 154);
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners for button */
+  padding: 9px 28px; /* Font size for button */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button Hover Effect */
+.button:hover {
+  background-color: #666; /* Lighter color on hover */
+}
+
+.button:active {
+  transform: scale(0.30)
+}
+
+.footer {
+  background-color:  #666;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+}
+
+.susisiekti {
+  color:#ccc;
+}
