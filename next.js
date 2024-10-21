@@ -36,17 +36,17 @@ function LaunchList() {
 
 
 
-function validateEmail(email) {
+  function validateEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   }
   
   document.querySelectorAll('.launchlist-form').forEach(form => {
     form.addEventListener('submit', function(event) {
-      const emailInput = form.querySelector('input[name="email"]');
+      const emailInput = form.querySelector('input[name="Email"]');
       if (emailInput && !validateEmail(emailInput.value)) {
-        alert('Please enter a valid email address');
-        event.preventDefault(); // Stop form submission
+        alert('Prašome įvesti galiojantį el. pašto adresą'); // Show error message in Lithuanian
+        event.preventDefault(); // Stop form submission if the email is invalid
       }
     });
   });
