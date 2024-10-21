@@ -240,7 +240,8 @@ text-align: center;
   background-position: center; /* Center the image */
   height: 40%; /* Full height of the viewport */
   display: flex;
-  justify-content: flex-end; /* Align the form to the right */
+  justify-content: flex-start; /* Align the form to the right */
+  /*justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   padding: 20px; /* Space around the content */
 }
