@@ -140,6 +140,8 @@
 }
 
 
+
+
 .forma {
   background-color: #f0f0f0;
   padding: 60px;
@@ -222,4 +224,76 @@ text-align: center;
 
 .susisiekti {
   color:#ccc;
+}
+
+
+
+
+
+
+
+
+
+.background-image {
+  background-image: url('Foto18.jpg'); /* Replace with your actual image file name */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  height: 40%; /* Full height of the viewport */
+  display: flex;
+  justify-content: flex-end; /* Align the form to the right */
+  align-items: center; /* Center vertically */
+  padding: 20px; /* Space around the content */
+}
+
+.forma {
+  background-color: rgb(255, 255, 255); /* Semi-transparent background for the form */
+  padding: 60px; /* Padding around the form */
+  border-radius: 8px; /* Rounded corners */
+  width: 400px; /* Fixed width for the form */
+  opacity: 0.8;
+}
+
+/* Heading Styling */
+.uzsakymas {
+  color: rgb(79, 150, 154);
+  font-size: 24px; /* Font size */
+  margin-bottom: 16px; /* Space below heading */
+  text-align: center;
+}
+
+/* Paragraph Styling */
+.instrukcija {
+  color: #555; /* Medium grey for the text */
+  margin-bottom: 24px; /* Space below paragraph */
+  text-align: center;
+}
+
+/* Input Field Styling */
+.name, .email {
+  width: 100%; /* Full width */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners for input */
+  padding: 12px; /* Padding for input */
+  font-size: 16px; /* Font size for input */
+  margin-bottom: 12px; /* Space below input */
+}
+
+/* Button Styling */
+.button {
+  background-color: rgb(79, 150, 154);
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners for button */
+  padding: 9px 28px; /* Font size for button */
+  transition: background-color 0.3s; /* Smooth transition */
+  cursor: pointer; /* Pointer on hover */
+}
+
+/* Button Hover Effect */
+.button:hover {
+  background-color: #666; /* Lighter color on hover */
+}
+
+.button:active {
+  transform: scale(0.5); /* Slight scaling effect on click */
 }
